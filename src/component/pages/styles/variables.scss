@@ -1,0 +1,24 @@
+// breakpoint
+$breakpoints: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// color
+// https://material.io/design/color/the-color-system.html#color-theme-creation
+$primary: #84fab0;
+$onPrimary: #222222;
+$secondary: #85150d;
+$onSecondary: #eaeaea;
+$background: #222222;
+$onBackground: #eaeaea;
+$surface: #313131;
+$onSurface: #eaeaea;
