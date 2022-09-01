@@ -5,9 +5,10 @@
   border: none;
   color: $onPrimary;
   border-radius: 2px;
-  font-size: 12px;
-  padding: 6px 4px;
+  font-size: 8px;
+  padding: 4px 16px;
   box-shadow: 0px 0px 4px 0px #909090;
+  align-items: center;
 }
 
 .btnSecondary {
@@ -15,7 +16,8 @@
   border: none;
   color: $onSecondary;
   border-radius: 2px;
-  font-size: 12px;
-  padding: 6px 4px;
+  font-size: 8px;
+  padding: 4px 16px;
   box-shadow: 0px 0px 4px 0px #909090;
+  align-items: center;
 }

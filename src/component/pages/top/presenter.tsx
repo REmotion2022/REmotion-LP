@@ -1,21 +1,10 @@
+import { Header } from '~/component/layouts/Header'
 import styles from './style.module.scss'
 
 export const TopPagePresenter: React.FC = () => {
   return (
     <div>
-      <div className={styles.header}>
-        <a href='' className={styles.logo}>
-          REmotion
-        </a>
-        <div className={styles.headerMenu}>
-          <a href='how-to-use' className={styles.link}>
-            アプリの使い方
-          </a>
-          <a href='https://remotion-b2f4b.web.app/'>
-            <button className={styles.btnPrimary}>使ってみる</button>
-          </a>
-        </div>
-      </div>
+      <Header />
       <div className={styles.problem}>
         <h1>オンライン会議でこんなことに困っていませんか?</h1>
         <div className={styles.problemContents}>

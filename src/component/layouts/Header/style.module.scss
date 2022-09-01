@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.header {
+  background: transparent;
+  color: $primary;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 8px;
+  position: sticky;
+  top: 0px;
+}
+
+.headerMenu {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: $primary;
+  text-decoration: none;
+  margin: 0px 12px;
+  font-weight: bold;
+}
+
+.logo {
+  color: $primary;
+  text-decoration: none;
+  font-weight: bold;
+}
