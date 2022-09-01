@@ -11,7 +11,9 @@ export const TopPagePresenter: React.FC = () => {
           <a href='how-to-use' className={styles.link}>
             アプリの使い方
           </a>
-          <button className={styles.btnPrimary}>使ってみる</button>
+          <a href='https://remotion-b2f4b.web.app/'>
+            <button className={styles.btnPrimary}>使ってみる</button>
+          </a>
         </div>
       </div>
       <div className={styles.problem}>
@@ -21,7 +23,9 @@ export const TopPagePresenter: React.FC = () => {
           <div className={styles.problemContentsCard}>相手の反応が見えないと話しづらい．．．</div>
           <div className={styles.problemContentsCard}>面白い冗談を言ったのにウケたかどうか分からない．．．</div>
         </div>
-        <button className={styles.btnSecondary}>使ってみる</button>
+        <a href='https://remotion-b2f4b.web.app/'>
+          <button className={styles.btnSecondary}>使ってみる</button>
+        </a>
       </div>
       <div className={styles.solution}>
         <h1>REmotin でできること</h1>
@@ -36,7 +40,9 @@ export const TopPagePresenter: React.FC = () => {
             <h2>感情の時系列データをグラフで表示</h2>
           </div>
         </div>
-        <button className={styles.btnSecondary}>使ってみる</button>
+        <a href='https://remotion-b2f4b.web.app/'>
+          <button className={styles.btnSecondary}>使ってみる</button>
+        </a>
       </div>
       <div className={styles.useCase}>
         <div className={styles.useCaseContents}>
