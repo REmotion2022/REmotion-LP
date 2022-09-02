@@ -1,21 +1,5 @@
 @import '../../styles/variables.scss';
 
-.btnPrimary {
-  background: linear-gradient(90deg, #84fab0 2.6%, #8fd3f4 100%);
-  border: none;
-  color: $onPrimary;
-  border-radius: 2px;
-  font-size: 12px;
-  padding: 6px 4px;
-  box-shadow: 0px 0px 4px 0px #909090;
-}
-
-.btnSecondary {
-  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-  border: none;
-  color: $onSecondary;
-  border-radius: 2px;
-  font-size: 12px;
-  padding: 6px 4px;
-  box-shadow: 0px 0px 4px 0px #909090;
+.defaultLayout {
+  margin: 0 auto;
 }

@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.problem {
+  text-align: center;
+  background: linear-gradient(90deg, #84fab0 2.6%, #8fd3f4 100%);
+  padding: 40px 0;
+  h1 {
+    margin-bottom: 40px;
+    color: $onPrimary;
+  }
+}
+
+.problemContents {
+  display: flex;
+  padding: 0 32px;
+}
+
+.problemContentsCard {
+  height: 300px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 0 12px;
+  p {
+    margin: 20px 0;
+    color: $onPrimary;
+  }
+}

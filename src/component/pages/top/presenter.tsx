@@ -1,21 +1,17 @@
 import { Header } from '~/component/layouts/Header'
 import styles from './style.module.scss'
+import { Button } from '~/component/uiParts/Button'
+import { ProblemArea } from '~/component/uiParts/ProblemArea'
 
 export const TopPagePresenter: React.FC = () => {
   return (
-    <div>
+    <div className={styles.defaultLayout}>
       <Header />
-      <div className={styles.problem}>
-        <h1>オンライン会議でこんなことに困っていませんか?</h1>
-        <div className={styles.problemContents}>
-          <div className={styles.problemContentsCard}>カメラをオフにしている人の反応が見えない．．．</div>
-          <div className={styles.problemContentsCard}>相手の反応が見えないと話しづらい．．．</div>
-          <div className={styles.problemContentsCard}>面白い冗談を言ったのにウケたかどうか分からない．．．</div>
-        </div>
-        <a href='https://remotion-b2f4b.web.app/'>
-          <button className={styles.btnSecondary}>使ってみる</button>
-        </a>
+      <div className={styles.hero}>
+        <div>オンライン会議感情可視化アプリ</div>
+        <div>REmotion</div>
       </div>
+      <ProblemArea />
       <div className={styles.solution}>
         <h1>REmotin でできること</h1>
         <div className={styles.solutionContents}>
@@ -30,7 +26,7 @@ export const TopPagePresenter: React.FC = () => {
           </div>
         </div>
         <a href='https://remotion-b2f4b.web.app/'>
-          <button className={styles.btnSecondary}>使ってみる</button>
+          <Button type='secondary'>使ってみる</Button>
         </a>
       </div>
       <div className={styles.useCase}>
