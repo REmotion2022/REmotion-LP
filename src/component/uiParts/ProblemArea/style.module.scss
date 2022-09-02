@@ -1,9 +1,34 @@
 @import '../../styles/variables.scss';
 
+$breakpoint-tablet: 1024px; /* 変数宣言 */
+$breakpoint-mobile: 640px; /* 変数宣言 */
+
+/* $break-point以下の時に@contentを適用 */
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+/* $break-point以上の時に@contentを適用 */
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+/* $break-point-min以上、$break-point-max以下の時に@contentを適用 */
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
 .problem {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: linear-gradient(90deg, #84fab0 2.6%, #8fd3f4 100%);
-  padding: 40px 0;
+  padding: 40px 20px;
   h1 {
     margin-bottom: 40px;
     color: $onPrimary;
@@ -13,13 +38,23 @@
 .problemContents {
   display: flex;
   padding: 0 32px;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    flex-direction: column;
+  }
 }
 
 .problemContentsCard {
   height: 300px;
-  width: 100%;
   border-radius: 4px;
-  margin: 0 12px;
+  padding: 0 20px;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    width: 100%;
+  }
+
   p {
     margin: 20px 0;
     color: $onPrimary;
