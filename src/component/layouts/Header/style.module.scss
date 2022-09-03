@@ -2,13 +2,12 @@
 
 .header {
   background: transparent;
-  color: $primary;
   width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 8px;
+  padding: 0px 24px;
   position: sticky;
   top: 0px;
   z-index: 10;
@@ -20,14 +19,14 @@
 }
 
 .link {
-  color: $primary;
+  color: $primaryDark;
   text-decoration: none;
   margin: 0px 12px;
   font-weight: bold;
 }
 
 .logo {
-  color: $primary;
+  color: $primaryDark;
   text-decoration: none;
   font-weight: bold;
 }
