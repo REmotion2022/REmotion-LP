@@ -13,7 +13,7 @@ export const HeroArea: React.FC = () => {
             オンライン会議 <br /> 感情可視化アプリ
           </h1>
           <div>
-            <Image src={TitleImg} alt='title-img' width='300px' height='100px' priority={true} placeholder='blur' />
+            <Image src={TitleImg.src} alt='title-img' width='300px' height='100px' priority={true} />
           </div>
           <div className={styles.btnWrapper}>
             <Button type='primary' size='large'>
@@ -23,7 +23,7 @@ export const HeroArea: React.FC = () => {
         </div>
       </div>
       <div className={styles.imageWrapper}>
-        <Image src={HeroImg} alt='hero-img' width='900px' height='600px' priority={true} placeholder='blur' />
+        <Image src={HeroImg.src} alt='hero-img' width='900px' height='600px' priority={true} />
       </div>
     </div>
   )

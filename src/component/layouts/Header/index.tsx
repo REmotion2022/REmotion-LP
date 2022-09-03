@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
   return (
     <div className={styles.header}>
       <div className={styles.logoWrapper}>
-        <Image src={logoImg} alt='logo-img' width='32px' height='32px' placeholder='blur' priority={true} />
+        <Image src={logoImg.src} alt='logo-img' width='32px' height='32px' priority={true} />
         <a href='' className={styles.logo}>
           REmotion
         </a>
