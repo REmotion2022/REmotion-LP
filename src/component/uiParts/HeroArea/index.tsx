@@ -23,7 +23,7 @@ export const HeroArea: React.FC = () => {
         </div>
       </div>
       <div className={styles.imageWrapper}>
-        <Image src={HeroImg.src} alt='hero-img' width='900px' height='600px' />
+        <Image src={HeroImg} alt='hero-img' width='900px' height='600px' priority={true} placeholder='blur' />
       </div>
     </div>
   )
