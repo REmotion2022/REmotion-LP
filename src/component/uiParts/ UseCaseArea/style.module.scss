@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+// 利用例全体
+.useCase {
+  text-align: center;
+  color: $onBackground;
+  padding: 0 24px;
+
+  p {
+    margin: 12px;
+  }
+}
+
+// コンテンツ表示場所
+.useCaseContents {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    flex-direction: column;
+    padding: 8px 0;
+  }
+}
+
+// カード
+.useCaseContentsCard {
+  background-color: white;
+  margin: 0 20px;
+  padding: 12px;
+  border-radius: 8px;
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    margin: 24px 12px;
+  }
+}
