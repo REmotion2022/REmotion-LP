@@ -28,6 +28,12 @@
   margin-top: 24px;
   padding-left: 48px;
 
+  @include max-screen($breakpoint-tablet) {
+    /* 1200px以下のとき */
+    width: 60%;
+    padding-left: 24px;
+  }
+
   @include max-screen($breakpoint-mobile) {
     /* 640px以下のとき */
     padding: 0;
@@ -43,6 +49,15 @@
     font-size: 48px;
   }
 
+  @include max-screen($breakpoint-tablet) {
+    /* 1200px以下のとき */
+    text-align: left;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
   @include max-screen($breakpoint-mobile) {
     /* 640px以下のとき */
     text-align: center;
@@ -55,6 +70,11 @@
 
 .imageWrapper {
   width: 60%;
+
+  @include max-screen($breakpoint-tablet) {
+    /* 1200px以下のとき */
+    width: 40%;
+  }
 
   @include max-screen($breakpoint-tablet) {
     /* 640px以上のとき */
