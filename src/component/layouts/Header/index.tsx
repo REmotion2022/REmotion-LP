@@ -11,9 +11,9 @@ export const Header: React.FC = () => {
         <a href='manual' className={styles.link}>
           アプリの使い方
         </a>
-        <a href='https://remotion-b2f4b.web.app/'>
-          <Button type='primary'>使ってみる</Button>
-        </a>
+        <Button type='primary' size='small'>
+          使ってみる
+        </Button>
       </div>
     </div>
   )

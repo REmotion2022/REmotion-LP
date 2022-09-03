@@ -21,9 +21,9 @@ export const ProblemArea: React.FC = () => {
           <p>面白い冗談を言ったのにウケたかどうか分からない...</p>
         </div>
       </div>
-      <a href='https://remotion-b2f4b.web.app/'>
-        <Button type='secondary'>使ってみる</Button>
-      </a>
+      <Button type='secondary' size='large'>
+        使ってみる
+      </Button>
     </div>
   )
 }

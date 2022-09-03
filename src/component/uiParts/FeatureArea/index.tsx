@@ -41,9 +41,9 @@ export const FeatureArea: React.FC = () => {
             <Image src={graphImg.src} alt='graph-img' width='900px' height='600px' />
           </div>
         </div>
-        <a href='https://remotion-b2f4b.web.app/'>
-          <Button type='secondary'>使ってみる</Button>
-        </a>
+        <Button type='secondary' size='large'>
+          使ってみる
+        </Button>
       </div>
     </div>
   )

@@ -4,17 +4,15 @@ import { SolutionArea } from '~/component/uiParts/SolutionArea'
 import { FeatureArea } from '~/component/uiParts/FeatureArea'
 import { UseCaseArea } from '~/component/uiParts/ UseCaseArea'
 import { ArchitectureArea } from '~/component/uiParts/ArchitectureArea'
-import styles from './style.module.scss'
 import { NewsArea } from '~/component/uiParts/NewsArea'
+import styles from './style.module.scss'
+import { HeroArea } from '~/component/uiParts/HeroArea'
 
 export const TopPagePresenter: React.FC = () => {
   return (
     <div className={styles.defaultLayout}>
       <Header />
-      <div className={styles.hero}>
-        <div>オンライン会議感情可視化アプリ</div>
-        <div>REmotion</div>
-      </div>
+      <HeroArea />
       <ProblemArea />
       <SolutionArea />
       <FeatureArea />
