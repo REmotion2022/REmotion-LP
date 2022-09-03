@@ -1,19 +1,26 @@
 import { Button } from '~/component/uiParts/Button'
 import styles from './style.module.scss'
+import Image from 'next/image'
+import logoImg from 'public/REmotion-logo-transparent.svg'
 
 export const Header: React.FC = () => {
   return (
     <div className={styles.header}>
-      <a href='' className={styles.logo}>
-        REmotion
-      </a>
+      <div className={styles.logoWrapper}>
+        <Image src={logoImg.src} alt='logo-img' width='32px' height='32px' />
+        <a href='' className={styles.logo}>
+          REmotion
+        </a>
+      </div>
       <div className={styles.headerMenu}>
         <a href='manual' className={styles.link}>
           アプリの使い方
         </a>
-        <Button type='primary' size='small'>
-          使ってみる
-        </Button>
+        <div className={styles.btnWrapper}>
+          <Button type='primary' size='small'>
+            使ってみる
+          </Button>
+        </div>
       </div>
     </div>
   )

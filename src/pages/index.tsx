@@ -8,7 +8,7 @@ const Home: NextPage = () => {
       <Head>
         <title>REmotionLP</title>
         <meta name='description' content='REmotionLP' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/REmotion-logo.svg' />
       </Head>
       <main>
         <TopPage />
