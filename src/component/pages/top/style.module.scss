@@ -2,4 +2,63 @@
 
 .defaultLayout {
   margin: 0 auto;
+  background-color: $background;
+}
+
+// 解決策全体
+.solution {
+  margin: 80px 0;
+  text-align: center;
+  color: $onPrimary;
+
+  h1 {
+    margin-bottom: 32px;
+    margin-top: 24px;
+  }
+
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+
+// 説明部分
+.solutionDescriptionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    flex-direction: column;
+  }
+}
+
+// 写真の幅を決定，TODO レスポンシブ対応
+.imgWrapper {
+  max-width: 800px;
+}
+
+.description {
+  text-align: start;
+  background-color: white;
+  padding: 24px;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    margin-bottom: 24px;
+  }
+}
+
+.feature {
+  text-align: center;
+  background: $backgroundPrimary;
+
+  h1 {
+    color: $onPrimary;
+  }
+
+  h2 {
+    color: $onPrimary;
+  }
 }

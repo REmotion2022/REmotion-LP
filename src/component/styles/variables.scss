@@ -18,7 +18,30 @@ $primary: #84fab0;
 $onPrimary: #707070;
 $secondary: #85150d;
 $onSecondary: #eaeaea;
-$background: #222222;
-$onBackground: #eaeaea;
+$background: #f7f6f4;
+$onBackground: #313131;
 $surface: #313131;
 $onSurface: #eaeaea;
+$backgroundPrimary: linear-gradient(90deg, #84fab0 2.6%, #8fd3f4 100%);
+
+$breakpoint-tablet: 1024px; /* 変数宣言 */
+$breakpoint-mobile: 640px; /* 変数宣言 */
+
+/* $break-point以下の時に@contentを適用 */
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+/* $break-point以上の時に@contentを適用 */
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+/* $break-point-min以上、$break-point-max以下の時に@contentを適用 */
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}

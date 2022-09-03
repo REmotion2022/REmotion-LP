@@ -2,6 +2,8 @@ import { Header } from '~/component/layouts/Header'
 import styles from './style.module.scss'
 import { Button } from '~/component/uiParts/Button'
 import { ProblemArea } from '~/component/uiParts/ProblemArea'
+import Image from 'next/image'
+import appImg from 'public/app.png'
 
 export const TopPagePresenter: React.FC = () => {
   return (
@@ -13,21 +15,36 @@ export const TopPagePresenter: React.FC = () => {
       </div>
       <ProblemArea />
       <div className={styles.solution}>
-        <h1>REmotin でできること</h1>
-        <div className={styles.solutionContents}>
-          <div className={styles.solutionContentsCard}>
-            <h2>オンライン会議アプリと併用可能</h2>
+        <h1>REmotion が解決します！</h1>
+        <div className={styles.solutionDescriptionWrapper}>
+          <div className={styles.description}>
+            <h2>オンライン会議でのコミュニケーションをサポート！</h2>
+            <p>
+              REmotion では，参加者の表情を認識し，その結果を感情を表す絵文字として表示します．
+              <br /> 絵文字はリアルタイムで変化し，参加者の状況や会議の雰囲気を掴むために役立ちます．
+            </p>
           </div>
-          <div className={styles.solutionContentsCard}>
-            <h2>リアルタイムで参加者の表情を可視化</h2>
-          </div>
-          <div className={styles.solutionContentsCard}>
-            <h2>感情の時系列データをグラフで表示</h2>
+          <div className={styles.imgWrapper}>
+            <Image src={appImg.src} width='1640px' height='1240px' alt='' />
           </div>
         </div>
-        <a href='https://remotion-b2f4b.web.app/'>
-          <Button type='secondary'>使ってみる</Button>
-        </a>
+      </div>
+      <div className={styles.feature}>
+        <h1>アプリの特徴</h1>
+        <div className={styles.featureContents}>
+          <div className={styles.featureContentsCard}>
+            <h2>1.既存のオンライン会議アプリと併用できる！</h2>
+          </div>
+          <div className={styles.featureContentsCard}>
+            <h2>2.リアルタイムで参加者の表情を可視化！</h2>
+          </div>
+          <div className={styles.featureContentsCard}>
+            <h2>3.感情の時系列データをグラフで表示！</h2>
+          </div>
+          <a href='https://remotion-b2f4b.web.app/'>
+            <Button type='secondary'>使ってみる</Button>
+          </a>
+        </div>
       </div>
       <div className={styles.useCase}>
         <div className={styles.useCaseContents}>
