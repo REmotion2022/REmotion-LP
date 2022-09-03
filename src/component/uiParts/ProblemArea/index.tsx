@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
-import yesOrNoImg from 'public/yes_or_no.png'
+import questionImg from 'public/question.svg'
 import { Button } from '~/component/uiParts/Button'
 
 export const ProblemArea: React.FC = () => {
@@ -13,7 +13,7 @@ export const ProblemArea: React.FC = () => {
             <p>カメラをオフにしている人の反応が見えない...</p>
           </div>
           <div className={styles.imgWrapper}>
-            <Image src={yesOrNoImg.src} alt='yes-or-no' width='200px' height='200px' />
+            <Image src={questionImg.src} alt='yes-or-no' width='200px' height='200px' />
           </div>
         </div>
         <div className={styles.problemContentsCard}>
@@ -21,7 +21,7 @@ export const ProblemArea: React.FC = () => {
             <p>相手の反応が見えないと話しづらい...</p>
           </div>
           <div className={styles.imgWrapper}>
-            <Image src={yesOrNoImg.src} alt='yes-or-no' width='200px' height='200px' />
+            <Image src={questionImg.src} alt='yes-or-no' width='200px' height='200px' />
           </div>
         </div>
         <div className={styles.problemContentsCard}>
@@ -29,7 +29,7 @@ export const ProblemArea: React.FC = () => {
             <p>面白い冗談を言ったのにウケたかどうか分からない</p>
           </div>
           <div className={styles.imgWrapper}>
-            <Image src={yesOrNoImg.src} alt='yes-or-no' width='200px' height='200px' />
+            <Image src={questionImg.src} alt='yes-or-no' width='200px' height='200px' />
           </div>
         </div>
       </div>

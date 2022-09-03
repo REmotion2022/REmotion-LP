@@ -1,6 +1,8 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
-import graphImg from 'public/graph.jpeg'
+import graphImg from 'public/graph.webp'
+import appImg from 'public/REmotion-app.webp'
+import useAppImg from 'public/use-REmotion.webp'
 import { Button } from '../Button'
 
 export const FeatureArea: React.FC = () => {
@@ -13,16 +15,19 @@ export const FeatureArea: React.FC = () => {
             <h2>1.既存のオンライン会議アプリと併用できる！</h2>
             <p>
               REmotion のアプリ自体にはオンライン会議機能はありません．Zoom や Google Meet, Microsoft Teams
-              など既存のオンライン会議アプリと併用することができます．
+              など既存のオンライン会議アプリと併用することができます
+              <br />
+              オンライン会議アプリで，カメラをオフにしている状況でも REmotion
+              を使うことで参加者の反応を知ることができます。
             </p>
           </div>
           <div className={styles.imageWrapper}>
-            <Image src={graphImg.src} alt='graph-img' width='900px' height='600px' />
+            <Image src={useAppImg.src} alt='use-app-img' width='900px' height='600px' />
           </div>
         </div>
         <div className={`${styles.featureContentsCard} ${styles.two}`}>
           <div className={styles.imageWrapper}>
-            <Image src={graphImg.src} alt='graph-img' width='900px' height='600px' />
+            <Image src={appImg.src} alt='app-img' width='1500px' height='1000px' />
           </div>
           <div className={styles.description}>
             <h2>2.リアルタイムで参加者の表情を可視化！</h2>

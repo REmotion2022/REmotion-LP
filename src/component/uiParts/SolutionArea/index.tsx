@@ -1,6 +1,6 @@
 import styles from './style.module.scss'
 import Image from 'next/image'
-import appImg from 'public/app.png'
+import appImg from 'public/REmotion-app.webp'
 
 export const SolutionArea: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ export const SolutionArea: React.FC = () => {
           </p>
         </div>
         <div className={styles.imgWrapper}>
-          <Image src={appImg.src} width='1640px' height='1240px' alt='' />
+          <Image src={appImg.src} width='1500px' height='1000px' alt='remotion-app' />
         </div>
       </div>
     </div>
