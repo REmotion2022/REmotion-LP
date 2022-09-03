@@ -11,7 +11,13 @@
   border-radius: 100vh;
 
   &.large {
-    padding: 12px 100px;
+    padding: 12px 80px;
+    font-size: 12px;
+
+    @include screen($breakpoint-mobile, $breakpoint-tablet) {
+      /* 640px以上1200px以下のとき */
+      padding: 12px 60px;
+    }
   }
 
   &:hover {

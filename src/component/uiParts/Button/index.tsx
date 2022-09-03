@@ -11,14 +11,16 @@ export const Button: React.FC<ButtonProps> = ({ type, children, size }) => {
   if (type == 'primary') {
     return (
       <a href='https://remotion-b2f4b.web.app/'>
-        <button className={`${styles.btnPrimary} ${size === 'large' ? styles.large : styles.small}`}>{children}</button>
+        <button className={`${styles.btnPrimary} ${size === 'large' ? styles.large : styles.small}`}>
+          <p>{children}</p>
+        </button>
       </a>
     )
   } else {
     return (
       <a href='https://remotion-b2f4b.web.app/'>
         <button className={`${styles.btnSecondary} ${size === 'large' ? styles.large : styles.small}`}>
-          {children}
+          <p>{children}</p>
         </button>
       </a>
     )
