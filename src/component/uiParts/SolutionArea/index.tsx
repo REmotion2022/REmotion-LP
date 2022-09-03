@@ -10,8 +10,8 @@ export const SolutionArea: React.FC = () => {
         <div className={styles.description}>
           <h2>オンライン会議でのコミュニケーションをサポート！</h2>
           <p>
-            REmotion では，参加者の表情を認識し，その結果を感情を表す絵文字として表示します．
-            <br /> 絵文字はリアルタイムで変化し，参加者の状況や会議の雰囲気を掴むために役立ちます．
+            REmotion では、参加者の表情を認識し、その結果を感情を表す絵文字として表示します。
+            <br /> 絵文字はリアルタイムで変化し、参加者の状況や会議の雰囲気を掴むために役立ちます。
           </p>
         </div>
         <div className={styles.imgWrapper}>

@@ -26,7 +26,7 @@ export const ProblemArea: React.FC = () => {
         </div>
         <div className={styles.problemContentsCard}>
           <div className={styles.chatBaloon}>
-            <p>面白い冗談を言ったのにウケたかどうか分からない</p>
+            <p>面白い冗談を言ったのにウケたかどうか分からない...</p>
           </div>
           <div className={styles.imgWrapper}>
             <Image src={questionImg.src} alt='yes-or-no' width='200px' height='200px' />

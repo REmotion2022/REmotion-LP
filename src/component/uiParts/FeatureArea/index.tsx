@@ -14,10 +14,10 @@ export const FeatureArea: React.FC = () => {
           <div className={styles.description}>
             <h2>1.既存のオンライン会議アプリと併用できる！</h2>
             <p>
-              REmotion のアプリ自体にはオンライン会議機能はありません．Zoom や Google Meet, Microsoft Teams
-              など既存のオンライン会議アプリと併用することができます
+              REmotion のアプリ自体にはオンライン会議機能はありません。Zoom や Google Meet、 Microsoft Teams
+              など既存のオンライン会議アプリと併用することができます。
               <br />
-              オンライン会議アプリで，カメラをオフにしている状況でも REmotion
+              オンライン会議アプリで、カメラをオフにしている状況でも REmotion
               を使うことで参加者の反応を知ることができます。
             </p>
           </div>
@@ -31,15 +31,15 @@ export const FeatureArea: React.FC = () => {
           </div>
           <div className={styles.description}>
             <h2>2.リアルタイムで参加者の表情を可視化！</h2>
-            <p>参加者を表す絵文字がリアルタイムで変化するため，リモートにいる相手の存在を確認することができます．</p>
+            <p>参加者を表す絵文字がリアルタイムで変化するため、リモートにいる相手の存在を確認することができます。</p>
           </div>
         </div>
         <div className={styles.featureContentsCard}>
           <div className={styles.description}>
             <h2>3.参加者の感情の変化をグラフで表示！</h2>
             <p>
-              会議中に参加者の感情がどのように変化したかをリアルタイムで変化するグラフで確認することができます．
-              <br /> また，会議後にグラフを確認することで会議を振り返ることもできます．
+              会議中に参加者の感情がどのように変化したかをリアルタイムで変化するグラフで確認することができます。
+              <br /> また、会議後にグラフを確認することで会議を振り返ることもできます。
             </p>
           </div>
           <div className={styles.imageWrapper}>

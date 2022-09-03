@@ -9,7 +9,7 @@ export const ArchitectureArea: React.FC = () => {
   return (
     <div className={styles.architecture}>
       <h1>使用技術</h1>
-      <p>REmotion は次の技術に支えられています</p>
+      <p>REmotion は次の技術に支えられています。</p>
       <div className={styles.iconCardWrapper}>
         <div className={styles.iconCard}>
           <div className={styles.imageWrapper}>
