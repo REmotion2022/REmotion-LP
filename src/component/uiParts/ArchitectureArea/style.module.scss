@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.architecture {
+  margin: 24px 0;
+  text-align: center;
+  color: $onBackground;
+
+  p {
+    margin: 24px 0;
+  }
+}
+
+.iconCardWrapper {
+  display: flex;
+  justify-content: center;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    flex-wrap: wrap;
+  }
+}
+
+.iconCard {
+  font-weight: bold;
+  margin: 12px 24px;
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+  }
+}

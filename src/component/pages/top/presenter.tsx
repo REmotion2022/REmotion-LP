@@ -2,9 +2,9 @@ import { Header } from '~/component/layouts/Header'
 import { ProblemArea } from '~/component/uiParts/ProblemArea'
 import { SolutionArea } from '~/component/uiParts/SolutionArea'
 import { FeatureArea } from '~/component/uiParts/FeatureArea'
-import styles from './style.module.scss'
 import { UseCaseArea } from '~/component/uiParts/ UseCaseArea'
-// import Image from 'next/image'
+import styles from './style.module.scss'
+import { ArchitectureArea } from '~/component/uiParts/ArchitectureArea'
 
 export const TopPagePresenter: React.FC = () => {
   return (
@@ -18,11 +18,7 @@ export const TopPagePresenter: React.FC = () => {
       <SolutionArea />
       <FeatureArea />
       <UseCaseArea />
-      <div className={styles.architecture}>
-        <div className={styles.architecutureContents}>
-          <h1>REmotion の使用技術</h1>
-        </div>
-      </div>
+      <ArchitectureArea />
       <div className={styles.news}>
         <div className={styles.newsList}>
           <h1>NEWS</h1>
