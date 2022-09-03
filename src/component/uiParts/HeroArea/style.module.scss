@@ -3,12 +3,18 @@
 .hero {
   display: flex;
   justify-content: space-around;
-  padding: 36px;
+  max-width: 1200px;
+  margin: 64px auto;
+  margin-bottom: 128px;
+  padding: 0 48px;
 
   @include max-screen($breakpoint-mobile) {
     /* 640px以下のとき */
     flex-direction: column;
+    margin: 0;
+    margin: 48px 0;
     text-align: center;
+    padding: 0 24px;
 
     .btnWrapper {
       display: none;
@@ -16,23 +22,42 @@
   }
 }
 
-.title {
+.titleWrapper {
   color: $onBackground;
-  padding-left: 56px;
-  width: 50%;
+  width: 40%;
+  margin-top: 24px;
+  padding-left: 48px;
 
   @include max-screen($breakpoint-mobile) {
     /* 640px以下のとき */
     padding: 0;
+    margin-top: 0px;
     width: 100%;
-  }
-
-  @include min-screen($breakpoint-tablet) {
-    /* 1200px以上のとき */
-    padding-left: 128px;
   }
 }
 
-.iamgeWrapper {
-  width: 50%;
+.title {
+  text-align: left;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    text-align: center;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+}
+
+.imageWrapper {
+  width: 60%;
+
+  @include max-screen($breakpoint-tablet) {
+    /* 640px以上のとき */
+    width: 100%;
+  }
 }
