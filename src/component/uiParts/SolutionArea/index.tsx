@@ -5,7 +5,10 @@ import appImg from 'public/REmotion-app.webp'
 export const SolutionArea: React.FC = () => {
   return (
     <div className={styles.solution}>
-      <h1>REmotion が解決します！</h1>
+      <h1>
+        その悩み <br />
+        REmotion が解決します！
+      </h1>
       <div className={styles.solutionDescriptionWrapper}>
         <div className={styles.description}>
           <h2>オンライン会議でのコミュニケーションをサポート！</h2>

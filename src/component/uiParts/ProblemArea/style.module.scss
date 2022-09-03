@@ -7,9 +7,20 @@
   align-items: center;
   background: linear-gradient(90deg, #84fab0 2.6%, #8fd3f4 100%);
   padding: 40px 20px;
+  position: relative;
+
   h1 {
     margin-bottom: 40px;
     color: $onPrimary;
+  }
+
+  &::after {
+    border: 160px solid transparent;
+    border-top: 100px solid $onPrimary;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
   }
 }
 

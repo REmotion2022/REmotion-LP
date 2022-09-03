@@ -2,7 +2,8 @@
 
 // 解決策全体
 .solution {
-  margin: 80px 0;
+  margin-top: 160px;
+  margin-bottom: 120px;
   text-align: center;
   color: $onPrimary;
 
@@ -14,14 +15,28 @@
   h2 {
     margin-bottom: 24px;
   }
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    margin-top: 120px;
+    margin-bottom: 48px;
+
+    h1 {
+      font-size: 24px;
+    }
+  }
 }
 
 // 説明部分
 .solutionDescriptionWrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
 
   @include max-screen($breakpoint-mobile) {
     /* 640px以下のとき */
@@ -29,18 +44,60 @@
   }
 }
 
-// 写真の幅を決定，TODO レスポンシブ対応
-.imgWrapper {
-  max-width: 800px;
-}
-
 .description {
-  text-align: start;
   background-color: white;
-  padding: 24px;
+  border-radius: 4px;
+  padding: 64px 48px 96px 48px;
+  width: 80%;
+
+  h2 {
+    width: 50%;
+    text-align: left;
+  }
+
+  p {
+    width: 50%;
+    text-align: left;
+  }
+
+  @include max-screen($breakpoint-tablet) {
+    /* 1200px以下のとき */
+    padding: 24px;
+  }
 
   @include max-screen($breakpoint-mobile) {
     /* 640px以下のとき */
     margin-bottom: 24px;
+    width: 100%;
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+}
+
+// 写真の幅を決定，TODO レスポンシブ対応
+.imgWrapper {
+  width: 40%;
+  position: absolute;
+  top: 64px;
+  right: 100px;
+
+  @include max-screen($breakpoint-tablet) {
+    /* 640px以下のとき */
+    right: 48px;
+    width: 40%;
+  }
+
+  @include max-screen($breakpoint-mobile) {
+    /* 640px以下のとき */
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
   }
 }
