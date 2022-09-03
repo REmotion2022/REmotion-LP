@@ -22,16 +22,19 @@ export const FeatureArea: React.FC = () => {
             </p>
           </div>
           <div className={styles.imageWrapper}>
-            <Image src={useAppImg.src} alt='use-app-img' width='900px' height='600px' />
+            <Image src={useAppImg} alt='use-app-img' width='900px' height='600px' placeholder='blur' />
           </div>
         </div>
         <div className={`${styles.featureContentsCard} ${styles.two}`}>
           <div className={styles.imageWrapper}>
-            <Image src={appImg.src} alt='app-img' width='1500px' height='1000px' />
+            <Image src={appImg} alt='app-img' width='1500px' height='1000px' placeholder='blur' />
           </div>
           <div className={styles.description}>
             <h2>2.リアルタイムで参加者の表情を可視化！</h2>
-            <p>参加者を表す絵文字がリアルタイムで変化するため、リモートにいる相手の存在を確認することができます。</p>
+            <p>
+              参加者を表す絵文字がリアルタイムで変化するため、リモートにいる相手の存在を確認することができます。 <br />{' '}
+              REmotion はカメラをオンにしなくても使えるので、プライバシーを気にせずに利用できます。
+            </p>
           </div>
         </div>
         <div className={styles.featureContentsCard}>
@@ -43,7 +46,7 @@ export const FeatureArea: React.FC = () => {
             </p>
           </div>
           <div className={styles.imageWrapper}>
-            <Image src={graphImg.src} alt='graph-img' width='900px' height='600px' />
+            <Image src={graphImg} alt='graph-img' width='900px' height='600px' placeholder='blur' />
           </div>
         </div>
         <Button type='secondary' size='large'>

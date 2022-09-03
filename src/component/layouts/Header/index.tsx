@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
         </a>
       </div>
       <div className={styles.headerMenu}>
-        <a href='manual' className={styles.link}>
+        <a href='https://remotion-b2f4b.web.app' className={styles.link}>
           アプリの使い方
         </a>
         <div className={styles.btnWrapper}>

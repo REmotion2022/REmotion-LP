@@ -18,7 +18,7 @@ export const SolutionArea: React.FC = () => {
           </p>
         </div>
         <div className={styles.imgWrapper}>
-          <Image src={appImg.src} width='1500px' height='1000px' alt='remotion-app' />
+          <Image src={appImg} width='1500px' height='1000px' alt='remotion-app' placeholder='blur' priority={true} />
         </div>
       </div>
     </div>
