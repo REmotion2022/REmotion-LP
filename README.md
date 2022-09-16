@@ -1,5 +1,5 @@
 ## Description
-REmotion の LP サイトになる予定
+REmotion の LP サイト
 
 ### 実行
 
