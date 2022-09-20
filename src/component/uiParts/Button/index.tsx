@@ -10,7 +10,7 @@ export type ButtonProps = {
 export const Button: React.FC<ButtonProps> = ({ type, children, size }) => {
   if (type == 'primary') {
     return (
-      <a href='https://remotion-b2f4b.web.app/'>
+      <a href='https://app.remotion.icu'>
         <button className={`${styles.btnPrimary} ${size === 'large' ? styles.large : styles.small}`}>
           <p>{children}</p>
         </button>
@@ -18,7 +18,7 @@ export const Button: React.FC<ButtonProps> = ({ type, children, size }) => {
     )
   } else {
     return (
-      <a href='https://remotion-b2f4b.web.app/'>
+      <a href='https://app.remotion.icu'>
         <button className={`${styles.btnSecondary} ${size === 'large' ? styles.large : styles.small}`}>
           <p>{children}</p>
         </button>
